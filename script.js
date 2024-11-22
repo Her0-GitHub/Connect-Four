@@ -1,3 +1,5 @@
+import roughjs from 'https://cdn.jsdelivr.net/npm/roughjs@4.6.6/+esm'
+
 const rows = 6
 const cols = 7
 const board = document.getElementById("board");
@@ -7,7 +9,7 @@ document.getElementById("restartBtn").addEventListener("click", restart);
 let currentPlayer = 1
 let winState = false
 
-const rc = rough.canvas(canvas);
+const rc = roughjs.canvas(canvas);
 const ctx = canvas.getContext('2d');
 
 function restart(){
@@ -21,7 +23,6 @@ function restart(){
     // Create the table from the top down (highest cell at row = 0)
     const children = board.childElementCount
     for (let i = 0; i < children; i++) {
-        console.log(board.childNodes[i])
         board.removeChild(board.childNodes[0])
     }
     for (let i = 0; i < rows; i++) {
@@ -53,7 +54,7 @@ function handleClick(cell) {
         const points = checkForVictory(targetCell)
         const tie = checkForTie()
         if (points || tie){
-            console.log(points)
+
             winState = true
             canvas.style.zIndex = "2"
 
@@ -211,12 +212,11 @@ function checkForVictory(cell){
     return false
 }
 
-function checkForTie(){
+function checkForTie() {
     let full = true
     let firstLine = board.rows[0]  // highest line
     for (let i=0; i < cols; i++){
         full &&= firstLine.cells[i].style.backgroundColor == "red" || firstLine.cells[i].style.backgroundColor == "yellow"
     }
-    console.log(full)
     return full
 }
