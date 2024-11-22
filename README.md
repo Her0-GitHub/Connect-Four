@@ -4,11 +4,11 @@ Connect Four
 
 In this case the game is *smooth and dark theme* which is quite relaxing to play.
 
-![Connect Four Screenshot](Connect-Four.png "Connect Four Screenshot")
+![Connect Four Screenshot](/img/Connect-Four.png "Connect Four Screenshot")
 
 **Connect Four** is played with 2 players (e.g. you and your friend) and it's a great compromise between the simplicity of [Tic-tac-toe][1] and the complexity of [Chess][2].
 
-![Connect Four Screenshot](Connect-Four1.png "Connect Four Screenshot")
+![Connect Four Screenshot](/img/Connect-Four1.png "Connect Four Screenshot")
 
 How to play
 -
