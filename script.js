@@ -1,5 +1,3 @@
-import rough from "./node_modules/roughjs/bundled/rough.esm.js"
-
 const rows = 6
 const cols = 7
 const board = document.getElementById("board");
