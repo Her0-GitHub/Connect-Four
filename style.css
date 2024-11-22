@@ -1,0 +1,74 @@
+body {
+    background-color: #1F2431;
+}
+
+h1 {
+    color: white;
+}
+
+#gameArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+table {
+    position: absolute;
+    align-items: center;
+    background-color: #1F2431;
+    border-collapse: collapse;
+    margin: 20px auto;
+    z-index: 1;
+}
+td {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: linear;
+}
+
+#canvas {
+    position: absolute;
+    align-items: center;    
+    display: block;
+    margin: 20px auto;
+    z-index: 0;
+}
+
+#winner {
+    top: 20%;
+    position: absolute;
+    z-index: 3;
+    background-color: #1F2431;
+    padding: 10px;
+    text-align: center;
+    border: solid #1af8ed;
+    border-radius: 5px;
+}
+
+#restartBtn{
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    cursor: pointer;
+    background-color: #1F2431;
+    color: aqua;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border-width: 3px;
+    border: solid #1af8ed;
+}
+
+#restartBtn:hover{
+    color: rgb(0, 110, 110);
+    border: solid rgb(0, 110, 110);
+}
