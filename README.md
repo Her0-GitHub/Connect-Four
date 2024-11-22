@@ -1,3 +1,5 @@
+<img width="60" height="60" align="left" style="float: left; margin: 0 15px 0 0;" alt="Connect Four Logo" src="https://raw.githubusercontent.com/Her0-GitHub/Connect-Four/master/img/favicon.png">
+
 Connect Four
 =
 [**Connect Four**][0] is a simple game similar to [Tic-tac-toe][1] where if you *connect four tokens* of your color (red or yellow) **you win!**
